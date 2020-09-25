@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-puts "Welcome to Tic Tac Toe! Where would you like to go?"
+puts "Please enter 1-9:"
 board = Array.new(9,"")
 input = gets.strip
 input_to_index(input)
