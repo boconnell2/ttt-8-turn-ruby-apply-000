@@ -21,6 +21,8 @@ def valid_move?(board, index)
     FALSE
   elsif index > (board.length - 1)
     FALSE
+  elsif index < 0 
+    FALSE 
   else
     true
   end
