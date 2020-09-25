@@ -1,11 +1,3 @@
-def position_taken?(board, index)
-  if board[index] == "X" || board[index] == "O"
-    true
-  else
-    false
-  end
-end
-
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
@@ -22,4 +14,22 @@ end
 def move(board, index, value = "X")
   board[index] = value
   display_board(board)
+end
+
+def valid_move?(board, index)
+  if position_taken?(board, index) == true
+    FALSE
+  elsif index > (board.length - 1)
+    FALSE
+  else
+    true
+  end
+end
+
+def position_taken?(board, index)
+  if board[index] == "X" || board[index] == "O"
+    true
+  else
+    FALSE
+  end
 end
