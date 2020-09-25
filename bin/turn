@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
-
+  board = Array.new(9,"")
+  turn(board)
+  
   
