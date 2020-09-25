@@ -1,3 +1,15 @@
+def turn()
+  puts "Please enter 1-9:"
+  board = Array.new(9,"")
+  input = gets.strip
+input_to_index(input)
+if valid_move?(board,index) do 
+  move(board,index)
+  display_board(board)
+else
+  puts "Invalid input. Where would you like to go?"
+  input = gets.strip
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
