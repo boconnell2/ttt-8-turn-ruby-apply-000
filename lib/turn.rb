@@ -7,7 +7,7 @@ def turn(board)
     move(board,index)
     display_board(board)
   else
-    puts "Invalid input. Where would you like to go?"
+    puts "Invalid"
     input = gets.strip
   end
 end
