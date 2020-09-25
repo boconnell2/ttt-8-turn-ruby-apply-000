@@ -8,6 +8,7 @@ def turn(board)
     display_board(board)
   else
     puts "Invalid"
+    puts "Please enter 1-9:"
     input = gets.strip
   end
 end
